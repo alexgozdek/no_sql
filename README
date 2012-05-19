@@ -1,5 +1,5 @@
- ## Technologie NoSQL
+## Technologie NoSQL
 
 
 * import danych do bazy mongoDB Uruchamiamy skryptem importToMongo.sh ( sposob uruchomienia opisany w pliku )
-* import danych do bazy couchDB Uruchamiamy skryptem importToCouchDB.sh ( sposob uruchomienia opisany w pliku )99
+* import danych do bazy couchDB Uruchamiamy skryptem importToCouchDB.sh ( sposob uruchomienia opisany w pliku )
