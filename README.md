@@ -99,7 +99,7 @@ res = db.people.mapReduce(m, r, "TopCountries" );
 db[res.result].find()
 ~~~
 
-* Przykładowe wyniki :
+* Przykładowe wyniki:
 ~~~
 { "_id" : "Solomon Islands", "value" : 1 }
 { "_id" : "Pitcairn", "value" : 2 }
