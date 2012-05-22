@@ -10,15 +10,18 @@
 Import danych do bazy mongoDB - importToCouchDB.sh
 
 * Uruchamiamy MongoDB
+
 ~~~ mongod --dbpath=$HOME/.data/var/lib/mongodb --port=27015 
 ~~~
 
 * Uruchamiamy skrypt importujący dane
+
 ~~~ 
 ./importToMongo.sh [sciezkaDoPlikuZdanymi] [nazwaBazy] [nazwa kolekcji] [port]
 ~~~
 
 * Przykładowy komunikat o poprawny dodaniu
+
 ~~~ 
 connected to: 127.0.0.1:27011;
 imported 80 objects; ~
@@ -54,11 +57,13 @@ Kopiowanie danych : people
 ~~~
  ./mongoToCouch.sh [nazwaBazyMONGO] [nazwa kolekcji MONGO] [port MONGO] [bazaCouch] [host:port Couch]
 ~~~
+
 ~~~
 ./mongoToCouch.sh people peopleCo 27011 people http://0.0.0.0:27015/
 ~~~
 
 * Przykładowy komunikat o poprawny dodaniu
+
 ~~~
 connected to: 127.0.0.1:27011;
 exported 220 records
@@ -72,6 +77,7 @@ exported 220 records
 * Uruchamiamy Futon - http://0.0.0.0:27015/_util
 * Dodajemy funkcję map i reduce z pliku mapReduceMongoDB.txt do widoków i uruchamiamy :
 * Przykładowe wyniki :
+
 ~~~
 "Solomon Islands"    1
 "Pitcairn"  2
