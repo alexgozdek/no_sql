@@ -46,7 +46,7 @@ Kopiowanie danych : people
 {"ok":true,"id":"bf41cc1149de006478594f975f04daae","rev":"1-c8beffae43bec70237dc623ac3a8e44e"}
 ~~~
 
-## Export danych z bazy MongoDB do CouchDB - mongoToCouch.sh
+## Eksport danych z bazy MongoDB do CouchDB - mongoToCouch.sh
 * Uruchamiamy CouchDB ( sposób uruchomienia podany powyżej )
 * Uruchamiamy MongoDB ( sposób uruchomienia podany powyżej )
 * Pamiętajmy, aby ustawić aplikacjom różne porty
