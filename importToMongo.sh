@@ -7,7 +7,7 @@ function helpme() {
   echo "Uzycie:"
   echo "[sciezkaDoPlikuZdanymi] [nazwaBazy] [nazwa kolekcji] [port]"
   echo "Przyklad: "
-  echo "dane.txt dane 27017"
+  echo "dane.txt people peopleCo 27017"
   echo "";
   exit 1
 }
