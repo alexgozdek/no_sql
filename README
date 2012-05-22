@@ -11,6 +11,7 @@
 ## Import danych do bazy mongoDB - importToCouchDB.sh
 Uruchamiamy MongoDB 
 * mongod --dbpath=$HOME/.data/var/lib/mongodb --port=27015 
+
 Uruchamiamy skrypt importujący dane
 * ./importToMongo.sh [sciezkaDoPlikuZdanymi] [nazwaBazy] [nazwa kolekcji] [port]
 
