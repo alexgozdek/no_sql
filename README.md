@@ -10,18 +10,16 @@
 Import danych do bazy mongoDB - importToCouchDB.sh
 
 * Uruchamiamy MongoDB
-
-~~~ mongod --dbpath=$HOME/.data/var/lib/mongodb --port=27015 
+~~~
+mongod --dbpath=$HOME/.data/var/lib/mongodb --port=27015 
 ~~~
 
 * Uruchamiamy skrypt importujący dane
-
 ~~~ 
 ./importToMongo.sh [sciezkaDoPlikuZdanymi] [nazwaBazy] [nazwa kolekcji] [port]
 ~~~
 
 * Przykładowy komunikat o poprawny dodaniu
-
 ~~~ 
 connected to: 127.0.0.1:27011;
 imported 80 objects; ~
@@ -55,7 +53,7 @@ Kopiowanie danych : people
 * Uruchamiamy skrypt eksportujący dane
 
 ~~~
- ./mongoToCouch.sh [nazwaBazyMONGO] [nazwa kolekcji MONGO] [port MONGO] [bazaCouch] [host:port Couch]
+./mongoToCouch.sh [nazwaBazyMONGO] [nazwa kolekcji MONGO] [port MONGO] [bazaCouch] [host:port Couch]
 ~~~
 
 ~~~
