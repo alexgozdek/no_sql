@@ -100,6 +100,7 @@ db[res.result].find()
 ~~~
 
 * Przykładowe wyniki:
+
 ~~~
 { "_id" : "Solomon Islands", "value" : 1 }
 { "_id" : "Pitcairn", "value" : 2 }
