@@ -26,7 +26,7 @@ Uruchamiamy CouchDB
 Uruchamiamy skrypt importujący dane
 * ./importToCouchDB.sh [sciezkaDoPlikuZdanymi] [nazwaBazy]  [host:port]
 
-Export danych z bazy MongoDB do CouchDB - mongoToCouch.sh
+Eksport danych z bazy MongoDB do CouchDB - mongoToCouch.sh
 Uruchamiamy CouchDB ( sposób uruchomienia podany powyżej )
 Uruchamiamy MongoDB ( sposób uruchomienia podany powyżej )
 
