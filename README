@@ -5,3 +5,31 @@
 * Eksport danych z bazy mongoDB do MySQL (php5). Uruchamiany skryptem mongoToMySQL.sh (sposob uruchomienia opisany w pliku).
 * Funkcje map i reduce dla CouchDB - funkcje w pliku mapReduceCouchDB.js
 * Funkcje map i reduce dla MongoDB - funkcje w pliku mapReduceMongoDB.js
+
+
+
+## Import danych do bazy mongoDB - importToCouchDB.sh
+Uruchamiamy MongoDB 
+* mongod --dbpath=$HOME/.data/var/lib/mongodb --port=27015 
+Uruchamiamy skrypt importujący dane
+* ./importToMongo.sh [sciezkaDoPlikuZdanymi] [nazwaBazy] [nazwa kolekcji] [port]
+
+Przykładowy komunikat o poprawny dodaniu
+ connected to: 127.0.0.1:27011;
+ imported 80 objects;
+
+
+## Import danych do bazy couchDB - importToCouchDB.sh
+Uruchamiamy CouchDB 
+* ./couchdb -A ~/.data/etc/couchdb/local.d;
+
+Uruchamiamy skrypt importujący dane
+* ./importToCouchDB.sh [sciezkaDoPlikuZdanymi] [nazwaBazy]  [host:port]
+
+Export danych z bazy MongoDB do CouchDB - mongoToCouch.sh
+Uruchamiamy CouchDB ( sposób uruchomienia podany powyżej )
+Uruchamiamy MongoDB ( sposób uruchomienia podany powyżej )
+
+Pamiętajmy, aby ustawić aplikacjom różne porty
+Uruchamiamy skrypt eksportujący dane
+ ./mongoToCouch.sh [nazwaBazyMONGO] [nazwa kolekcji MONGO] [port MONGO] [bazaCouch] [host:port Couch]
